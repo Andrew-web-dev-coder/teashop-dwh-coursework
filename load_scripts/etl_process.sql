@@ -39,6 +39,6 @@ FROM stg_orders o
 JOIN stg_order_items i ON o.order_code = i.order_code
 JOIN stg_products p ON i.product_code = p.product_code;
 
--- Очистка fact_restocking и вставка (если требуется)
+-- Очистка fact_restocking и вставка 
 DELETE FROM fact_restocking;
--- Здесь можно вставлять данные, если у тебя есть информация о пополнении товара
+
